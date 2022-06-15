@@ -36,7 +36,7 @@ An RLlib environment consists of:
 3. an observation by the agent of certain parts of the state (**observation space**)
 4. **reward**, which is the only feedback the agent receives per action.
 
-The model that maximizes cumulative future expected reward is called a **policy**.  A policy is a function mapping the environment's state into an action to take, usually written **π** (s(t)).  Below is a diagram of the RL iterative learning process.
+The model that tries to maximize the expected sum over all future rewards is called a **policy**.  The policy is a function mapping the environment's observations to an action to take, usually written **π** (s(t)) -> a(t).  Below is a diagram of the RL iterative learning process.
 
 .. image:: images/env_key_concept2.png
 
